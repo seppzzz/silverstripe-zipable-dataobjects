@@ -11,17 +11,17 @@ create .zip files from dataobjects on the fly with textfile and images
 
 config.yml :
 
-
+```
 YourDataObject:
   extensions:
     - seppzzz\ZipableDataObjects\ZipableDataObject
-
+```
 
 
 
 On your Dataobject :
 
-
+```
 public function createZipableFields(){
 		
 		$fields = [
@@ -36,13 +36,14 @@ public function createZipableFields(){
 		return $fields;
 		
 	}
-
+```
 
 
 
 In your template :
 
-
+```
 <% if $getDownloadLink %>			
 	<a href="$getDownloadLink" class="btn btn-primary zipDownloadButton">Download ZIP</a>
 <% end_if %>
+```

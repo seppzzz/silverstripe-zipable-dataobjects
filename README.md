@@ -44,7 +44,7 @@ public function createZipableFields()
 	'Images' => $this->Images()
 	];
 		
-return $fields;
+	return $fields;
 		
 }
 

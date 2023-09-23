@@ -37,7 +37,7 @@ public function createZipableFields()
 		
 	$fields = [
 		'Textfields' => [
-			'Title' => $this->getMyTitle(),
+			'Title' => $this->Title,
 			'Subtitle' => $this->SubTitle,
 			'Content' => $this->Content
 		],

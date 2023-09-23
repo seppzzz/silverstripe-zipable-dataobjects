@@ -2,9 +2,19 @@
 create .zip files from dataobjects on the fly with textfile and images
 
 
+## Requirements
+
+- SilverStripe 4 (tested with 4.11 and up)
+
 ## Installation
 
-> composer require seppzzz/zipable-dataobjects
+Installation is supported via composer only
+
+```sh
+
+composer require seppzzz/zipable-dataobjects
+
+```
 
 ## Documentation
 

@@ -12,7 +12,7 @@
 			//console.log(href);
 			
 			// Get the base URL from the SilverStripe template variable
-			var baseHref = '$BaseHref'; // Ensure this is properly rendered in your template
+			// var baseHref = '$BaseHref'; // Ensure this is properly rendered in your template
 
 			// Construct the URL for the AJAX request
 			var downloadUrl = href; // + slug; baseHref + '/' + 

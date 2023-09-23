@@ -8,9 +8,9 @@ create .zip files from dataobjects on the fly with textfile and images
 
 ## Documentation
 
-//--------
-config.yml
-//--------
+
+config.yml :
+
 
 YourDataObject:
   extensions:
@@ -18,9 +18,9 @@ YourDataObject:
 
 
 
-//-----------------
-On your Dataobject:
-//-----------------
+
+On your Dataobject :
+
 
 public function createZipableFields(){
 		
@@ -39,9 +39,9 @@ public function createZipableFields(){
 
 
 
-//---------------
-In your template:
-//---------------
+
+In your template :
+
 
 <% if $getDownloadLink %>			
 	<a href="$getDownloadLink" class="btn btn-primary zipDownloadButton">Download ZIP</a>

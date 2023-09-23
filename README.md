@@ -32,20 +32,22 @@ YourDataObject:
 On your Dataobject :
 
 ```
-public function createZipableFields(){
+public function createZipableFields()
+{
 		
-		$fields = [
-			'Textfields' => [
-				'Title' => $this->getMyTitle(),
-				'Subtitle' => $this->SubTitle,
-				'Content' => $this->Content
-				],
-			'Images' => $this->Images()
-		];
+	$fields = [
+		'Textfields' => [
+			'Title' => $this->getMyTitle(),
+			'Subtitle' => $this->SubTitle,
+			'Content' => $this->Content
+		],
+	'Images' => $this->Images()
+	];
 		
-		return $fields;
+return $fields;
 		
-	}
+}
+
 ```
 
 

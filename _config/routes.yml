@@ -5,8 +5,6 @@ After:
   - '#coreroutes'
 ---
 
-
 SilverStripe\Control\Director:
   rules:
     'zip//downloadZip/$object/$id': 'seppzzz\ZipableDataObjects\ZipPageController'
-#    'zip//xxx': 'seppzzz\ZipableDataObjects\ZipPageController'

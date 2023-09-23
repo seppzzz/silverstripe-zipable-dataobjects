@@ -1,0 +1,12 @@
+---
+Name: zipableroutes
+After:
+  - '#rootroutes'
+  - '#coreroutes'
+---
+
+
+SilverStripe\Control\Director:
+  rules:
+    'zip//downloadZip/$object/$id': 'seppzzz\ZipableDataObjects\ZipPageController'
+#    'zip//xxx': 'seppzzz\ZipableDataObjects\ZipPageController'

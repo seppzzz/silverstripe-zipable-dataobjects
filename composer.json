@@ -1,0 +1,30 @@
+{
+    "name": "seppzzz/zipable-dataobjects",
+    "description": "This module adds a link (Button) to DataObjects to zip em and download on the fly",
+    "type": "silverstripe-vendormodule",
+    "keywords": ["seppzzz", "silverstripe", "dataobject", "zip"],
+    "license": "GPL-2.0-only",
+    "authors": [{
+        "name": "seppzzz",
+        "email": "seppzzz@till.graphics"
+    }],
+    "autoload": {
+        "psr-4": {
+            "seppzzz\\ZipableDataObjects\\": "src/"
+        }
+    },
+	"extra": {
+		"installer-name": "zipable-dataobjects",
+		"resources-dir": "_resources",
+		"expose": [
+			"javascript",
+			"css"
+        ]
+    },
+    "require": {
+        "silverstripe/framework": "^4.0",
+        "silverstripe/cms": "^4.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,15 @@
+---
+Name: zipableconfig
+---
+
+#MyDataobject:
+#  extensions:
+#    - ZipableDataObject
+
+#PageController:
+#  extensions:
+#    - seppzzz\ZipableDataObjects\ZipPageController
+
+PageController:
+  extensions:
+    - CustomPageControllerExtension

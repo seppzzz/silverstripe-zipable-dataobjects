@@ -57,11 +57,17 @@ class ZipPageController extends \PageController //ContentController
 						// Parse the Content field using ShortcodeParser
 						$fieldValue = ShortcodeParser::get_active()->parse( $fieldValue );
 					}
+					// Add a newline character after/instead of every </p> tag
+        			$fieldValue = str_replace('</p>', "\n", $fieldValue);
+					
+					// Replace &nbsp; entities with regular spaces
+					$fieldValue = str_replace('&nbsp;', ' ', $fieldValue);
 
+       
 					$fieldValue = strip_tags( $fieldValue );
 
 					// Append the field value to the combined content
-					$textFieldsContent .= "{$fieldName}: {$fieldValue}\n\n";
+					$textFieldsContent .= "{$fieldName}:\n{$fieldValue}\n\n";
 				}
 
 				// Name the text file after the Title field

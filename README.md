@@ -41,7 +41,7 @@ public function createZipableFields()
 			'Subtitle' => $this->SubTitle,
 			'Content' => $this->Content
 		],
-	'Images' => $this->Images()
+		'Images' => $this->Images()
 	];
 		
 	return $fields;

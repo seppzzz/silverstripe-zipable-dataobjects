@@ -28,6 +28,23 @@ class ZipableDataObject extends DataExtension
 		$fields->insertAfter( CheckboxField::create('EnableZip', 'EnableZip'), 'Title');
 		
 	}
+	
+	
+	public function createZipableFields(){
+		
+		$fields = [
+			'Textfields' => [
+				'Title' => $this->owner->getMyTitle(),
+				'Subtitle' => $this->owner->SubTitle,
+				'Content' => $this->owner->Content
+				],
+			'Images' => $this->owner->Images()
+		];
+		
+		return $fields;
+		
+	}
+	
    
     
 	

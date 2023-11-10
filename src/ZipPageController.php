@@ -94,6 +94,7 @@ class ZipPageController extends \PageController //ContentController
 				header( 'Content-Disposition: attachment; filename="' . $file . '"' );
 				header( 'Content-Length: ' . filesize( $file ) );
 				header( 'X-Zip-Name: ' . $nameOfZipArchive );
+				header( 'X-Zip-Size: ' . filesize($file) );
 
 				readfile( $file );
 
@@ -122,4 +123,5 @@ class ZipPageController extends \PageController //ContentController
 
 
 }
+
 

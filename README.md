@@ -30,6 +30,10 @@ YourDataObject:
 
 
 On your Dataobject :
+dont change the keys 'Textfields' and 'Images'.
+create as many textfields in 'Textfields' - array as needed.
+with 'Images' array point to your Image - Object 
+
 
 ```
 public function createZipableFields()
